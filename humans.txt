@@ -3,7 +3,8 @@
 
 # TEAM
 
-    Robert Henderson -- Senior Frontend Software Engineer -- @roberthenderson
+    Robert Henderson -- Senior Frontend Software Engineer
+    Twitter -- @roberthenderson
 
 # THANKS
 
