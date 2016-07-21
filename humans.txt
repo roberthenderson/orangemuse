@@ -5,6 +5,7 @@
 
     Robert Henderson -- Senior Frontend Software Engineer: San Francisco, CA
     Twitter -- @roberthenderson
+    Email -- robert@orangemuse.com
 
 # THANKS
 
