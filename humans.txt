@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Robert Henderson -- Senior Frontend Software Engineer
+    Robert Henderson -- Senior Frontend Software Engineer: San Francisco, CA
     Twitter -- @roberthenderson
 
 # THANKS
