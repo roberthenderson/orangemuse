@@ -1,0 +1,153 @@
+.academy-container {
+	max-width: 1200px;
+	padding: 0 0 40px 200px;
+	margin: 0 auto;
+
+	&:after {
+		@include after-clear();
+	}
+
+	main {
+		padding-top: 46px;
+	}
+}
+
+.category {
+	.academy-container {
+		main {
+			padding-top: 0;
+		}
+	}
+}
+
+.blog, .archive, .search {
+	h1.page-title {
+		border-bottom: 1px solid #dbdfe3;
+		padding-top: 85px;
+	}
+
+	.academy-container {
+		&> article {
+			display: none;
+		}
+	}
+
+	#primary {
+		width: 67%;
+		float: left;
+
+		article {
+			padding: 46px 0 47px 0;
+			margin: 0;
+			border-bottom: 1px solid #e8ebed;
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			header {
+				h1 {
+					a {
+						text-decoration: none;
+						color: $questis-grey;
+						font-family: $secondary-regular;
+						font-size: 36px;
+						line-height: 40px;
+
+						&:hover {
+							color: #5d9fd5;
+						}
+					}
+				}
+
+				.entry-meta {
+					text-transform: uppercase;
+					line-height: 24px;
+
+					span.author {
+						a {
+							font-size: 16px;
+							line-height: 26px;
+						}
+					}
+				}
+			}
+
+			.entry-meta, .entry-summary {
+				a {
+					color: #1b6dbc;
+					text-decoration: none;
+					border-bottom: 1px dotted;
+					padding-bottom: 3px;
+					font-size: 20px;
+					line-height: 28px;
+
+					&:hover {
+						border: none;
+						color: #5d9fd5;
+					}
+				}
+			}
+
+			.image-clip {
+				position: relative;
+				max-height: 400px;
+				height: 400px;
+				margin-top: 3.7%;
+				overflow: hidden;
+
+				img.wp-post-image {
+					position: absolute;
+					top: -5%;
+					width: 100%;
+					margin-top: 15px;
+					height: auto;
+					//clip: rect(23px,670px,423px,0);
+				}
+			}
+
+			.entry-summary {
+				p, blockquote {
+					font-size: 20px;
+					line-height: 28px;
+					margin: 0 0 1.5em 0;
+
+					&:last-child {
+						margin: 0;
+					}
+				}
+
+				a.more-link {
+					line-height: 34px;
+				}
+			}
+		}
+	}
+
+	//#secondary is styled in .sidebar in global
+
+	.entry-meta, .entry-summary, .paging-navigation {
+		a {
+			color: #1b6dbc;
+			text-decoration: none;
+		}
+	}
+}
+
+.search {
+	h1.page-title {
+		padding-top: 35px;
+	}
+
+	#primary {
+		width: 100%;
+		float: none;
+	}
+}
+
+.entry-summary, .entry-content {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}

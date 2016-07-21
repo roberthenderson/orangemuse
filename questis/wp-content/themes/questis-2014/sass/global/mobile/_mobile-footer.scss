@@ -1,0 +1,30 @@
+footer {
+	.footer-left {
+		float: none;
+		width: 100%;
+	}
+	.footer-right {
+		width: 100%;
+		padding-top: 12%;
+		float: none;
+	}
+
+	@media only screen and (max-width: 555px) {
+		ul.footer-nav {
+			li {
+				float: none;
+				line-height: 34px;
+			}
+		}
+		ul.footer-links {
+			li {
+				float: none;
+				line-height: 34px;
+
+				&.separator {
+					display: none;
+				}
+			}
+		}
+	}
+}

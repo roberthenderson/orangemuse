@@ -1,0 +1,53 @@
+.hero-video {
+	.top {
+		top: 30%;
+	}
+}
+
+main.home-page {
+	.hero-image {
+		span.man-back {
+			right: -10%;
+			transition:all .5s ease-in-out;
+		}
+	}
+
+	.questis-academy {
+		.global-container {
+			.home-highlight-content {
+				article {
+					width: 32.5%;
+
+					.image-clip {
+						margin-left: 8%;
+
+						img {
+							width: 92%;
+						}
+					}
+
+					&:first-child {
+						.content {
+							margin-right: 8%;
+						}
+					}
+
+					&:nth-child(2) {
+						width: 35%;
+
+						.content {
+							margin-right: 8%;
+						}
+					}
+
+					&:last-child {
+						.image-clip {
+							margin: 0;
+							text-align: right;
+						}
+					}
+				}
+			}
+		}
+	}
+}

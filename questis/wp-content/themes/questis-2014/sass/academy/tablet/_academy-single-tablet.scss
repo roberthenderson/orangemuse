@@ -1,0 +1,52 @@
+body.single {
+	article {
+		.image-clip {
+			height: 300px;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		header.entry-header {
+			h1 {
+				font-size: 36px;
+				line-height: 42px;
+			}
+		}
+
+		.entry-content {
+
+			blockquote {
+				padding-left: 7%;
+				font-size: 24px;
+				line-height: 30px;
+			}
+
+			& > p {
+				padding: 0 0 5% 0;
+			}
+
+			.post-video {
+				padding: 0 0 5% 0;
+			}
+
+			h5 {
+				margin: 16px 0 0;
+				font-size: 28px;
+				line-height: 36px;
+			}
+
+			ol {
+				margin-left: 0;
+				margin-right: 0;
+
+				& > li {
+					float: none;
+					width: 100%;
+					min-height: 0;
+				}
+			}
+		}
+	}
+}

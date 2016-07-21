@@ -1,0 +1,168 @@
+/*
+Theme Name: questis-2014
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: questis-2014
+Domain Path: /languages/
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ questis-2014 is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Reset
+2.0 - Typography
+3.0 - Elements
+4.0 - Forms
+5.0 - Navigation
+	5.1 - Links
+	5.2 - Menus
+6.0 - Accessibility
+7.0 - Alignments
+8.0 - Clearings
+9.0 - Widgets
+10.0 - Content
+	10.1 - Posts and pages
+	10.2 - Asides
+	10.3 - Comments
+11.0 - Infinite scroll
+12.0 - Media
+	12.1 - Captions
+	12.2 - Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Base/Desktop Styles
+--------------------------------------------------------------*/
+
+/* Setup CSS -------------------------------------------------*/
+@import "setup/fonts";
+@import "setup/preboot";
+@import "setup/mixins";
+
+/* Underscores CSS -------------------------------------------*/
+@import "underscores/reset";
+@import "underscores/typography";
+@import "underscores/elements";
+@import "underscores/forms";
+@import "underscores/navigation";
+@import "underscores/accessibility";
+@import "underscores/alignments";
+@import "underscores/clearings";
+@import "underscores/widgets";
+@import "underscores/content";
+@import "underscores/infinite-scroll";
+@import "underscores/media";
+
+/* Third Party CSS -------------------------------------------*/
+@import "third-party/flexslider";
+@import "third-party/fancy-box";
+/* jQuery UI CSS -------------------------------------------*/
+@import "third-party/jquery-ui";
+@import "third-party/jquery-ui-structure";
+@import "third-party/jquery-ui-theme";
+
+/* Global CSS ------------------------------------------------*/
+@import "global/global-layout";
+@import "global/header";
+@import "global/global-sidebar-layout";
+@import "global/footer";
+@import "global/sticky-nav";
+
+/* Home Page CSS ---------------------------------------------*/
+@import "home/home-layout";
+
+/* Advice Page CSS -------------------------------------------*/
+@import "advice/advice-layout";
+
+/* Academy CSS -----------------------------------------------*/
+@import "academy/academy-layout";
+@import "academy/academy-menu";
+@import "academy/academy-single";
+
+/* Invest Page CSS -------------------------------------------*/
+@import "invest/invest-layout";
+
+/*--------------------------------------------------------------
+Desktop Breakpoint CSS
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+	/* Global CSS ------------------------------------------------*/
+	@import "global/desktop/desktop-global-layout";
+	@import "global/desktop/desktop-sticky-nav";
+
+	/* Home Page CSS ---------------------------------------------*/
+	@import "home/desktop/desktop-home-layout";
+
+	/* Academy CSS -----------------------------------------------*/
+	@import "academy/desktop/desktop-academy-layout";
+	@import "academy/desktop/desktop-academy-single";
+
+	/* Advice Page CSS ---------------------------------------------*/
+	@import "advice/desktop/desktop-advice-layout";
+
+	/* Invest Page CSS -------------------------------------------*/
+	@import "invest/desktop/desktop-invest-layout";
+}
+
+/*--------------------------------------------------------------
+Tablet/Mobile Breakpoint CSS
+--------------------------------------------------------------*/
+@media only screen and (max-width: 999px) {
+	/* Global CSS ------------------------------------------------*/
+	@import "global/tablet/tablet-global-layout";
+	@import "global/tablet/tablet-sidebar-layout";
+	@import "global/tablet/tablet-sticky-nav";
+
+	/* Home Page CSS ---------------------------------------------*/
+	@import "home/tablet/tablet-home-layout";
+
+	/* Academy CSS -----------------------------------------------*/
+	@import "academy/tablet/academy-layout-tablet";
+	@import "academy/tablet/academy-menu-tablet";
+	@import "academy/tablet/academy-single-tablet";
+
+	/* Advice Page CSS ---------------------------------------------*/
+	@import "advice/tablet/tablet-advice-layout";
+
+	/* Invest Page CSS -------------------------------------------*/
+	@import "invest/tablet/tablet-invest-layout";
+}
+
+/*--------------------------------------------------------------
+Mobile Breakpoint CSS
+--------------------------------------------------------------*/
+@media only screen and (max-width: 782px) {
+	/* Global CSS ------------------------------------------------*/
+	@import "global/mobile/mobile-global-layout";
+	@import "global/mobile/mobile-footer";
+
+	/* Home Page CSS ---------------------------------------------*/
+	@import "home/mobile/mobile-home-layout";
+
+	/* Academy CSS -----------------------------------------------*/
+	@import "academy/mobile/academy-layout-mobile";
+	@import "academy/mobile/academy-menu-mobile";
+	@import "academy/mobile/academy-single-mobile";
+
+	/* Advice Page CSS ---------------------------------------------*/
+	@import "advice/mobile/mobile-advice-layout";
+
+	/* Invest Page CSS -------------------------------------------*/
+	@import "invest/mobile/mobile-invest-layout";
+}

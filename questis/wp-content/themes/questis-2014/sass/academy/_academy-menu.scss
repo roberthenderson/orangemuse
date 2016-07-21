@@ -1,0 +1,198 @@
+.academy-menu {
+	border-bottom: 1px solid #cacdcd;
+
+	ul.academy-container {
+		list-style: none;
+		height: 100%;
+		padding-bottom: 0;
+
+		li {
+			height: 100px;
+			float: left;
+			margin: 0 90px 0 0;
+
+			&:nth-child(4) {
+				margin: 0;
+			}
+
+			a {
+				font-family: $primary-light;
+				font-size: 19px;
+				line-height: 100px;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: $questis-grey;
+
+				&:hover {
+					color: #879799;
+				}
+			}
+
+			&.top-search {
+				float: right;
+				margin: 25px 0 0;
+				position: relative;
+				display: inline-block;
+				width: 270px;
+				height: 75px;
+
+				&:after {
+					@include after-clear();
+				}
+
+				input.search-field {
+					width: 180px;
+					height: 20px;
+					padding: 14px 20px 14px 19px;
+					border: 1px solid #e3e4e4;
+					border-right: none;
+					border-radius: 0;
+					color: $questis-grey;
+					font-family: $primary-light;
+					font-size: 16px;
+					line-height: 20px;
+					text-transform: uppercase;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+
+				input.search-submit {
+					border: none;
+					@include text-hide();
+					padding: 0;
+					border-radius: 0;
+					box-shadow: none;
+					background: $sprite-url no-repeat 0 -200px;
+					height: 50px;
+					width: 50px;
+					position: absolute;
+					right: 0;
+					top: 0;
+
+					&:hover {
+						background-position: -50px -200px;
+					}
+				}
+			}
+		}
+
+		&:after {
+			@include after-clear();
+		}
+	}
+}
+
+.tag-container {
+	border-bottom: 1px solid #cacdcd;
+	padding: 22px 0 10px 0;
+
+	ul.tags {
+		list-style: none;
+		max-width: 1200px;
+		padding: 0 0 0 170px;
+		margin: 0 auto;
+
+
+		&:after {
+			@include after-clear();
+		}
+
+		li {
+			float: left;
+			width: 170px;
+			height: 39px;
+			text-align: center;
+
+
+			a {
+				text-align: center;
+				overflow: hidden;
+				display: inline-block;
+				font-size: 16px;
+				line-height: 26px;
+				height: 27px;
+				color: $questis-grey;
+				text-decoration: none;
+				padding: 0 13px;
+
+				&.active, &:hover {
+					background: #9ac33d $sprite-url no-repeat;
+					color: $white;
+					border-radius: 3px;
+				}
+
+				&:hover {
+					//background-position: -231px -624px;
+					background-image: none;
+				}
+
+				&.active {
+					background-position: -231px -572px;
+					padding-left: 30px;
+
+					&:hover {
+						background: #9ac33d $sprite-url no-repeat -231px -572px;
+						padding-left: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.category-company {
+	.academy-menu {
+		ul.academy-container {
+			li {
+				&:first-child {
+					a {
+						color: #9ac33d;
+					}
+				}
+			}
+		}
+	}
+}
+
+.category-investing {
+	.academy-menu {
+		ul.academy-container {
+			li {
+				&:nth-child(2) {
+					a {
+						color: #9ac33d;
+					}
+				}
+			}
+		}
+	}
+}
+
+.category-advice {
+	.academy-menu {
+		ul.academy-container {
+			li {
+				&:nth-child(3) {
+					a {
+						color: #9ac33d;
+					}
+				}
+			}
+		}
+	}
+}
+
+.category-wellth {
+	.academy-menu {
+		ul.academy-container {
+			li {
+				&:nth-child(4) {
+					a {
+						color: #9ac33d;
+					}
+				}
+			}
+		}
+	}
+}

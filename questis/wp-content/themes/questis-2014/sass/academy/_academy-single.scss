@@ -1,0 +1,345 @@
+body.single {
+	article {
+		.image-clip {
+			position: relative;
+			overflow: hidden;
+			height: 509px;
+
+			img {
+				position: relative;
+				top: -60%;
+				left: 0;
+				width: 105%;
+				height: auto;
+			}
+		}
+		.single-container {
+			width: 81.2%;
+			margin: auto;
+		}
+		.back-to-academy {
+			height: 59px;
+			background: #f7f7f7;
+			border-bottom: 1px solid #e3e4e4;
+
+			a {
+				color: #4e5859;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 12px;
+				line-height: 60px;
+
+				&:hover {
+					color: #879799;
+				}
+			}
+		}
+		header.entry-header {
+			height: auto;
+			padding: 42px 0 53px 0;
+			border-bottom: 1px solid #fcfcfc;
+			box-shadow: 0px 3px 5px #dbdbdb;
+
+			h1 {
+				color: $questis-grey;
+				font-family: $secondary-regular;
+				font-size: 60px;
+				line-height: 64px;
+				text-align: center;
+			}
+
+			.entry-meta {
+				text-align: center;
+				position: relative;
+				top: -21px;
+
+				img.avatar {
+					border-radius: 38px;
+					position: relative;
+					top: 32px;
+					margin: 0 10px;
+				}
+
+				span.byline {
+					position: relative;
+
+					a.twitter-icon {
+						@include text-hide();
+						display: block;
+						width: 21px;
+						height: 21px;
+						background: $sprite-url no-repeat 0 -270px;
+						position: absolute;
+						top: 25px;
+						left: 26%;
+					}
+				}
+			}
+		}
+
+		.entry-content {
+			padding-bottom: 84px;
+
+			blockquote {
+				font-family: $primary-light;
+				font-size: 28px;
+				line-height: 34px;
+				color: $questis-orange;
+				padding: 11px 0 11px 70px;
+				margin: 33px 0 44px 0;
+				border-left: 1px solid $questis-orange;
+			}
+
+			p {
+				margin: 0;
+			}
+
+			&> p {
+				padding: 0 80px 26px 100px;
+				margin: 0;
+				font-size: 20px;
+				line-height: 28px;
+				color: $questis-grey;
+			}
+
+			.post-video {
+				padding: 0 80px 26px 100px;
+			}
+
+			.social-links {
+				padding: 0 80px 26px 100px;
+				text-align: center;
+
+				&:after {
+					@include after-clear();
+				}
+
+				a {
+					@include text-hide();
+					display: inline-block;
+					background: $sprite-url no-repeat -357px -408px;
+					width: 45px;
+					height: 36px;
+					margin: 0 1px 0 0;
+
+					&.twitter {
+						background-position: -406px -408px;
+					}
+
+					&.gplus {
+						background-position: -455px -408px;
+					}
+				}
+			}
+
+			small {
+				display: block;
+				padding: 0 80px 26px 100px;
+			}
+
+			h5 {
+				text-transform: uppercase;
+				font-family: $secondary-regular;
+				font-size: 36px;
+				line-height: 42px;
+				color: #213951;
+				border-top: 1px solid $questis-light-border;
+				padding: 50px 0 4px 0;
+				margin: 16px 80px 0 100px;
+			}
+
+			ol {
+				counter-reset: li;
+				margin: 0 80px 48px 100px;
+				padding: 0;
+
+				&:after {
+					@include after-clear();
+				}
+
+				&> li {
+					position: relative;
+					list-style: none;
+					font-size: 20px;
+					line-height: 28px;
+					width: 46%;
+					float: left;
+					padding: 140px 0 34px 0;
+					min-height: 372px;
+					margin-right: 4%;
+					border-bottom: 1px solid $questis-light-border;
+
+					&:before {
+						content: counter(li);
+						counter-increment: li;
+						position: absolute;
+						top: 35px;
+						background: $questis-orange;
+						color: $white;
+						border-radius: 38px;
+						line-height: 78px;
+						font-size: 43px;
+						font-family: $primary-medium;
+						text-align: center;
+						display: block;
+						width: 76px;
+						height: 76px;
+					}
+				}
+			}
+		}
+	}
+
+	// I move this plugin content in questis.js so as to not edit plugin code
+	.rp4wp-related-posts {
+		position: relative;
+		width: 100%;
+		padding: 0;
+		border-top: 1px solid #d5d6cf;
+
+		h3 {
+			position: absolute;
+			width: 250px;
+			left: 50%;
+			top: -14px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			text-align: center;
+			margin-left: -125px;
+			font-size: 16px;
+			line-height: 26px;
+			background: $white;
+		}
+
+		ul {
+			width: 1170px;
+			margin: 80px auto 90px auto;
+			list-style: none;
+			border-top: 1px solid #d5d6cf;
+			border-bottom: 1px solid #d5d6cf;
+
+			&:after {
+				@include after-clear();
+			}
+
+			li {
+				float: left;
+				width: 33.33%;
+				padding: 2.22% 2.5%;
+				border-right: 1px solid #d5d6cf;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					border-right: none;
+					padding-right: 0;
+				}
+
+				.rp4wp-related-post-image {
+					height: 150px;
+					overflow: hidden;
+
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+
+				.rp4wp-related-post-content {
+					padding: 16px 0 19px 0;
+
+					a {
+						color: $questis-blue;
+						border-bottom: 1px dotted $questis-blue;
+						text-decoration: none;
+						font-size: 20px;
+						line-height: 28px;
+						padding-bottom: 2px;
+
+						&:hover {
+							border: none;
+							color: #5d9fd5;
+						}
+					}
+
+					p {
+						line-height: 26px;
+						margin: 3px 0 0;
+					}
+				}
+			}
+		}
+	}
+
+	.blog-questis-invest {
+		background: $questis-blue;
+		height: 348px;
+		text-align: center;
+		color: $white;
+
+		.global-container {
+			padding: 50px 0 0;
+			background: $sprite-url no-repeat 0 -1100px;
+			height: 100%;
+			transition: none;
+
+			h3 {
+				text-transform: uppercase;
+				font-size: 36px;
+				line-height: 44px;
+				font-family: $secondary-regular;
+				margin-bottom: 6px;
+
+				span {
+					position: relative;
+					top: -12px;
+					left: 18px;
+
+					&.icon {
+						top: auto;
+						left: auto;
+						display: inline-block;
+						background: $sprite-url no-repeat -452px -494px;
+						width: 48px;
+						height: 48px;
+					}
+				}
+			}
+
+			p {
+				font-size: 20px;
+				line-height: 28px;
+
+				span {
+					display: block;
+				}
+			}
+
+			a.button {
+				display: block;
+				background: transparent;
+				width: 265px;
+				height: 60px;
+				margin: 42px auto;
+				border: 1px solid $white;
+				border-radius: 8px;
+				font-family: $primary-light;
+				font-size: 16px;
+				line-height: 58px;
+				text-transform: uppercase;
+				text-decoration: none;
+				text-align: center;
+				color: $white;
+				letter-spacing: 2px;
+
+				&:hover {
+					background: $white;
+					font-family: $primary-medium;
+					color: $questis-blue;
+				}
+			}
+		}
+	}
+}

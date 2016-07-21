@@ -1,0 +1,55 @@
+.sidebar {
+	float: right;
+	width: 27%;
+	padding: 133px 10px 0 10px;
+
+	aside {
+		border-top: 1px solid #dbdfe3;
+		padding: 30px 0 0;
+
+		h3 {
+			font-size: 28px;
+			line-height: 34px;
+			text-transform: uppercase;
+			color: $questis-grey;
+			margin-bottom: 7px;
+		}
+
+		&.fresh-thoughts {
+			.fresh-thoughts-content {
+				article {
+					margin-bottom: 25px;
+				}
+
+				h4 {
+					a {
+						color: #1b6dbc;
+						text-decoration: none;
+						border-bottom: 1px dotted;
+						padding-bottom: 3px;
+						font-size: 20px;
+						line-height: 28px;
+
+						&:hover {
+							border: none;
+							color: #5d9fd5;
+						}
+					}
+				}
+
+				span.posted-on {
+					font-size: 16px;
+					line-height: 36px;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					margin-bottom: 12px;
+					display: inline-block;
+				}
+
+				p {
+					padding-bottom: 11px;
+				}
+			}
+		}
+	}
+}

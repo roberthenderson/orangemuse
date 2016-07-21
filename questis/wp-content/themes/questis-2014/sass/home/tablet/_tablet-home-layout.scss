@@ -1,0 +1,44 @@
+.hero-video {
+	.top {
+		top: 25%;
+	}
+}
+
+main.home-page {
+	.how-we-work {
+		margin: 10% 0;
+
+		.how-we-work-container {
+			.column {
+				span.image {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	.questis-academy {
+		height: auto;
+
+		.global-container {
+			.home-highlight-content {
+				article {
+					min-height: 388px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 840px) {
+		.questis-academy {
+			.global-container {
+				.home-highlight-content {
+					article {
+						min-height: 412px;
+					}
+				}
+			}
+		}
+	}
+}

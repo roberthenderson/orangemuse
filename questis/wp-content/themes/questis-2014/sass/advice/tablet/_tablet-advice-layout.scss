@@ -1,0 +1,329 @@
+main.advice-page {
+	.hero-image {
+		height: 100%;
+
+		.hero-image-container {
+			padding: 7% 7.5%;
+		}
+		h2 {
+			font-size: 34px;
+			line-height: 40px;
+			width: 100%;
+		}
+
+		p.hero-copy {
+			width: 100%;
+		}
+
+		span.seth-macfarlane {
+			display: none;
+		}
+	}
+
+	.more-answers {
+		padding: 7% 0;
+
+		h3 {
+			font-size: 30px;
+			line-height: 34px;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	.competitors {
+		padding: 7% 0;
+		height: 100%;
+
+		.global-container {
+			padding: 0 3%;
+		}
+
+		p {
+			width: 100%;
+		}
+
+		.flexslider {
+			width: 100%;
+
+			ul.slides {
+				li {
+					.testimonial {
+						padding: 1.5% 2%;
+						font-size: 20px;
+						line-height: 28px;
+						width: 70%;
+					}
+
+					&:nth-child(even) {
+						.testimonial {
+							margin-left: 1.5%;
+						}
+					}
+
+					&:nth-child(odd) {
+						.testimonial {
+							//margin-right: 1.5%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.video {
+		h3 {
+			padding: 7% 3%;
+
+			span.arrow {
+				left: 43%;
+			}
+		}
+	}
+
+	.how-it-works {
+		.global-container {
+			padding: 7% 0;
+			width: 100%;
+
+			h3 {
+				display: block;
+			}
+
+			h4 {
+				display: block;
+				line-height: 26px;
+			}
+
+			img {
+				top: 25.5%;
+			}
+
+			@media only screen and (max-width: 908px) {
+				.icons-container {
+					.col {
+						&.get-started {
+							.icon {
+								margin: 120% 0 0;
+							}
+						}
+
+						&.meet-your-expert {
+							.icon {
+								margin: 100% 0 0;
+							}
+						}
+
+						&.establish-priorities {
+							.icon {
+								margin: 80% 0 0;
+							}
+						}
+
+						&.deliver-discuss {
+							.icon {
+								margin: 60% 0 0;
+							}
+						}
+
+						&.ongoing-support {
+							.icon {
+								margin: 40% 0 0;
+							}
+						}
+					}
+				}
+
+				img {
+					top: 25%;
+				}
+			}
+		}
+	}
+
+	.for-less-than {
+		height: 100%;
+
+		.global-container {
+			width: 100%;
+			padding: 7% 3%;
+			margin: 0;
+
+			h3 {
+				text-align: center;
+			}
+
+			p {
+				text-align: center;
+				margin: 3% 0 0;
+				width: 100%;
+			}
+
+			span.beer {
+				display: none;
+			}
+
+			a {
+				width: 270px;
+				display: block;
+				text-align: center;
+				margin: 3% auto 0 auto;
+			}
+		}
+	}
+
+	.why-questis-advice {
+		.global-container {
+			margin: 0;
+			width: 100%;
+			max-width: 100%;
+			padding: 7% 3%;
+
+			h2 {
+				font-size: 26px;
+				margin: 0 0 7% 0;
+			}
+
+			ul {
+				li {
+					width: 100%;
+					padding: 0;
+
+					h4 {
+						padding: 0 0 0 90px;
+						height: 70px;
+					}
+
+					p {
+						padding: 10px 0 0;
+					}
+
+					span.icon {
+						top: 0;
+						left: 0;
+					}
+
+					&.personalized-advice, &.convenient-communication {
+						p {
+							padding: 30px 0 0;
+						}
+
+						span.icon {
+							left: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.our-experts {
+		height: 100%;
+
+		.global-container {
+			width: 100%;
+			padding: 7% 3%;
+
+			ol {
+				&> li {
+					width: 100%;
+
+					&.third {
+						border-bottom: 1px solid #c0c4c3;
+					}
+
+					&.last {
+						padding-top: 14px;
+					}
+				}
+			}
+
+			.financial-planner {
+				width: 100%;
+				margin: 7% 0 0;
+				position: relative;
+
+				&.john-tabb {
+					margin: 7% 0 0;
+				}
+
+				img {
+					width: 35%;
+					margin: 3% 0 0 3%;
+					height: auto;
+				}
+
+				.content {
+					width: 100%;
+					padding: 3%;
+
+					.top-info {
+						width: 60%;
+						position: absolute;
+						top: 3%;
+						left: 45%;
+					}
+				}
+			}
+		}
+	}
+
+	.faqs-plan-terms {
+		height: 100%;
+		padding: 7% 0;
+
+		.global-container {
+			h3 {
+				font-size: 18px;
+				letter-spacing: 3px;
+
+				&.faq {
+					width: 100%;
+				}
+			}
+
+			ul {
+				border-top: none;
+				padding: 7% 0 0;
+				margin: 0 0 7% 0;
+
+				li {
+					width: 100%;
+				}
+			}
+
+			small {
+				margin: 1% 0 0;
+			}
+
+			.prices-container {
+				width: 100%;
+
+				.price-box {
+					margin: 7% auto 0 auto;
+					float: none;
+
+					&.one-time {
+						margin-right: auto;
+					}
+				}
+			}
+		}
+	}
+
+	ul.what-you-get {
+		li {
+			width: 100%;
+			height: auto;
+			padding: 3% 0;
+			line-height: 28px;
+		}
+	}
+
+	.sign-me-up-now {
+		height: 100%;
+		padding: 7% 0;
+	}
+}

@@ -1,0 +1,122 @@
+body.single {
+	article {
+		.image-clip {
+			height: 200px;
+		}
+
+		header.entry-header {
+			padding: 7% 0 12% 0;
+
+			h1 {
+				font-size: 30px;
+				line-height: 36px;
+				margin-bottom: 5%;
+			}
+		}
+
+		.entry-content {
+			.social-links {
+				padding: 0;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+			.image-clip {
+				height: 250px;
+
+				img {
+					top: 25%;
+				}
+			}
+
+			.single-container {
+				width: 90%;
+			}
+
+			header.entry-header {
+				.entry-meta {
+					top: 0;
+
+					img.avatar {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.rp4wp-related-posts {
+		ul {
+			li {
+				.rp4wp-related-post-image {
+					height: auto;
+					overflow: visible;
+				}
+
+				.rp4wp-related-post-content {
+					a {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+
+	}
+
+	.blog-questis-invest {
+		.global-container {
+			background: none;
+		}
+	}
+
+	@media only screen and (max-width: 650px) {
+		.rp4wp-related-posts {
+			ul {
+				border: none;
+				margin: 10% auto;
+
+				li {
+					float: none;
+					width: 100%;
+					border: none;
+
+					.rp4wp-related-post-image {
+						height: auto;
+						overflow: visible;
+					}
+
+					.rp4wp-related-post-content {
+						a {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	@media only screen and (max-width: 520px) {
+		.blog-questis-invest {
+			.global-container {
+				h3 {
+					font-size: 28px;
+
+					span {
+						left: 10px;
+						top: -15px;
+					}
+				}
+
+				p {
+					font-size: 16px;
+					line-height: 26px;
+
+					span {
+						display: inline;
+					}
+				}
+			}
+		}
+	}
+}

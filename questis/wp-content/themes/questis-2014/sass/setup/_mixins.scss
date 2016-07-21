@@ -1,0 +1,76 @@
+// Clear floated elements within a container
+@mixin after-clear() {
+	display: block;
+	content: ".";
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+@mixin text-hide() {
+	line-height: 0;
+	font-size: 0;
+	color: transparent;
+}
+
+@mixin down-arrow($bottom: -20px) {
+	position: absolute;
+	z-index: 99;
+	bottom: $bottom;
+	left: 48%;
+	height: 48px;
+	width: 48px;
+	display: block;
+	background: $page-sprite-url no-repeat -360px -824px;
+
+	@media only screen and (max-width: 945px) {
+		left: 47%;
+	}
+
+	@media only screen and (max-width: 800px) {
+		left: 46%;
+	}
+
+	@media only screen and (max-width: 600px) {
+		left: 45%;
+	}
+
+	@media only screen and (max-width: 425px) {
+		left: 44%;
+	}
+
+	@media only screen and (max-width: 380px) {
+		left: 43.5%;
+	}
+}
+
+@mixin chart-heading($padding-left: 25px) {
+	.heading {
+		position: absolute;
+		top: 84px;
+
+		h3 {
+			display: inline-block;
+			text-transform: uppercase;
+			font-family: $primary-light;
+			font-size: 28px;
+			line-height: 34px;
+			letter-spacing: 6px;
+			padding-left: $padding-left;
+		}
+
+		h4 {
+			display: inline-block;
+			text-transform: uppercase;
+			font-family: $primary-light;
+			font-size: 16px;
+			line-height: 16px;
+			letter-spacing: 3px;
+			position: relative;
+			top: -4px;
+			padding: 0 0 0 27px;
+		}
+	}
+}

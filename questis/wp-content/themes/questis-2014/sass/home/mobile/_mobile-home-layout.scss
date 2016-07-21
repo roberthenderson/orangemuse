@@ -1,0 +1,304 @@
+.hero-video {
+	.top {
+		top: 20%;
+	}
+}
+
+main.home-page {
+	.hero-image {
+		height: auto;
+
+		.hero-image-container {
+			padding: 10% 5%;
+		}
+
+		h2 {
+			font-size: 50px;
+		}
+
+		h3 {
+			font-size: 24px;
+			line-height: 32px;
+		}
+
+		p.hero-copy {
+			width: 100%;
+		}
+
+		span.man-back {
+			display: none;
+		}
+	}
+	.how-we-work {
+		.how-we-work-container {
+			padding-top: 40px;
+
+			.column {
+				float: none;
+				width: 100%;
+				margin: 0;
+
+				span.image {
+					display: none;
+				}
+
+				h4 {
+					padding-top: 0;
+				}
+			}
+		}
+	}
+
+	.questis-products {
+		height: 100%;
+	}
+
+	.questis-product {
+		position: static;
+		top: auto;
+
+		&.fixed {
+			position: static;
+			top: auto;
+		}
+
+		h2 {
+			font-size: 50px;
+		}
+
+		.product-container {
+			width: 94%;
+			margin: 0 3%;
+			padding-top: 15% !important;
+
+			a.product-tab {
+				display: none;
+			}
+		}
+	}
+
+	.in-the-news {
+		padding: 10% 0;
+	}
+
+	.planning-for-individuals {
+
+	}
+	.portfolios-for-individuals {
+		.portfolios-for-individuals-container.product-container {
+
+		}
+	}
+
+	.questis-academy {
+		.global-container {
+			.home-highlight-content {
+				article {
+					min-height: 450px;
+
+					.content {
+						padding-bottom: 0;
+
+						h4 {
+							a {
+								font-size: 18px;
+							}
+						}
+
+						p {
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 650px) {
+		.questis-academy {
+			padding: 30px 0 0;
+
+			.global-container {
+				.heading {
+					position: static;
+					margin: 0 auto;
+					left: auto;
+					top: auto;
+					width: 285px;
+
+					&:after {
+						@include after-clear();
+					}
+
+					span {
+						display: block;
+						float: left;
+						position: static;
+						top: auto;
+						line-height: 114px;
+						letter-spacing: 1px;
+
+						&.icon {
+							margin: 0 10px;
+							position: static;
+						}
+					}
+				}
+
+				&> p {
+					display: none;
+				}
+
+				.home-highlight-content {
+					article {
+						float: none;
+						min-height: 0;
+						width: 100%;
+						border-left: none;
+						border-right: none;
+
+						.image-clip {
+							height: 200px;
+							text-align: center;
+						}
+
+						.content {
+							padding-bottom: 0;
+							width: 92%;
+							margin: 0 4% 5% 4%;
+
+							h4 {
+								a {
+									font-size: 18px;
+								}
+							}
+
+							p {
+								margin: 0;
+							}
+						}
+
+						&:first-child {
+							.content {
+								margin: 0 4% 5% 4%;
+							}
+						}
+
+						&:nth-child(2) {
+							width: 100%;
+
+							.image-clip {
+								margin: 0;
+							}
+						}
+
+						&:last-child {
+							.image-clip {
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 520px) {
+		.hero-image {
+			h2 {
+				font-size: 32px;
+				line-height: 40px;
+			}
+			h3 {
+				font-size: 20px;
+				line-height: 28px;
+				margin: 5% 0;
+			}
+			p.hero-copy {
+				font-size: 16px;
+				line-height: 26px;
+			}
+		}
+		.how-we-work {
+			border-top: none;
+			
+			h3 {
+				width: auto;
+				left: 0;
+				margin-left: 0;
+				position: static;
+				text-align: center;
+			}
+		}
+		.questis-product {
+			h2 {
+				font-size: 34px;
+				line-height: 40px;
+			}
+		}
+		.financial-wellness {
+			.financial-wellness-container.product-container {
+				h4 {
+					font-size: 30px;
+					line-height: 34px;
+				}
+			}
+		}
+		.in-the-news {
+			.news-images {
+				img {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+#wellth-signup {
+	width: 100%;
+	height: auto;
+}
+
+@media only screen and (max-width: 720px) {
+	.hero-video {
+		.top {
+			top: 15%;
+		}
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.hero-video {
+		.top {
+			//top: 10%;
+			width: 100%;
+			left: auto;
+			margin-left: 0;
+
+			h3 {
+				display: none;
+			}
+
+			img.graphic {
+				width: 76%;
+				margin: 0 12%;
+				height: auto;
+				padding: 0 5%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	#wellth-signup {
+		padding-top: 45px;
+
+		input[type="email"] {
+			width: 230px;
+		}
+
+		input[type="submit"] {
+			width: 230px;
+		}
+	}
+}

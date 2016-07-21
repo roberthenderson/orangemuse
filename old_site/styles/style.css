@@ -1,0 +1,422 @@
+/* --- --- --- RESET --- --- --- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent; }
+	
+/* -------------------------- 
+STANDARD HTML TAG DEFINITION
+---------------------------*/
+body {
+	background: url(../images/background.jpg) repeat #FFFFFF;
+}
+
+h1 {
+	font-size: 16px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-smooth: auto;
+	color: #f47b27;
+	font-weight: bold;
+	letter-spacing: 0px;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
+h2 {
+	background: url(../images/bottom-dot.png) repeat-x bottom left;
+	font-size: 24px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	color: #f47b27;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 0;
+	margin: 0 0 15px 0;
+	padding: 0 0 10px 0;
+}
+
+h3 {
+	font-size: 18px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	color: #f47b27;
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-family: 'Gill Sans', Arial, Helvetica, sans-serif;
+	color: #888;
+	text-align: left;
+	line-height: 22px;
+	margin: 0 0 20px 0;
+}
+
+a:link {
+	color: #f47b27;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fdb822;
+	text-decoration: none;
+}
+
+a:active {
+	color: #f47b27;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #f47b27;
+	text-decoration: none;
+}
+
+
+
+.clear {
+	clear:both;
+}
+
+/* -------------------------- 
+BORDERS
+---------------------------*/
+
+#top-side {
+	height: 50px;
+	z-index: 1;
+}
+
+	#corner-top-left {
+		background: url(../images/corner-top-left.png) no-repeat top left;
+		width: 50px;
+		height: 50px;
+		position: fixed;
+		left: 0;
+		float: left;
+		z-index: 1;
+	}
+	
+	#top {
+		background: url(../images/top-side.png) repeat-x;
+		width: 100%;
+		height: 50px;
+		top: 0;
+		float: left;
+		position: fixed;	
+	}
+	
+	#corner-top-right {
+		background: url(../images/corner-top-right.png) no-repeat top right;
+		width: 50px;
+		height: 50px;
+		position: fixed;
+		right: 0;
+		float: left;
+		z-index: 1;
+	}
+
+#right-side {
+	background: url(../images/right-side.png) repeat-y;
+	width: 50px;
+	height: 100%;
+	position: fixed;
+	right: 0;
+}
+
+#bottom-side {
+	height: 50px;
+	bottom: 0;
+	position: fixed;
+	z-index: 1;
+}
+
+	#corner-bottom-left {
+		background: url(../images/corner-bottom-left.png) no-repeat bottom left;
+		width: 50px;
+		height: 50px;
+		position: fixed;
+		left: 0;
+		z-index: 1;
+		float: left;
+	}
+	
+	#bottom {
+		background: url(../images/bottom-side.png) repeat-x;
+		width: 100%;
+		height: 50px;
+		bottom: 0;
+		position: fixed;
+		float: left;
+	}
+	
+	#corner-bottom-right {
+		background: url(../images/corner-bottom-right.png) no-repeat bottom right;
+		width: 50px;
+		height: 50px;
+		position: fixed;
+		right: 0;
+		float: left;
+	}
+	
+#left-side {
+	background: url(../images/left-side.png) repeat-y;
+	width: 50px;
+	height: 100%;
+	left: 0;
+	position: fixed;
+}
+
+/* -------------------------- 
+CONTENT
+---------------------------*/
+
+img.center {
+	display: block;
+	margin: 0 auto;
+}
+
+/* -------------------------- 
+Navigation
+---------------------------*/
+
+ul.menu{
+	width:286px;
+	overflow:hidden;
+	margin: 15px auto 0;
+	padding:0;
+}
+
+ul.menu li{
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #f47b27;
+	float:left;
+	margin:0 5px 0 5px;
+	list-style: none;
+}
+
+	ul.menu li span {
+		color: #fdb822;	
+	}
+	
+#content {
+	margin: 15px auto 0;	
+	width: 555px;
+	padding: 0 50px 0 0;
+}
+
+#content-left {
+	float: left;
+	width: 475px;
+}
+
+#content-right {
+	float: left;
+	width: 50px;
+	padding: 100px 0 0 30px;
+}
+
+/* -------------------------- 
+JQUERY TOOLS STYLING
+---------------------------*/
+
+/* main vertical scroll */
+	#main {
+		position:relative;
+		overflow:hidden;
+		height: 300px;
+		margin: 0 auto;
+		width: 340px;
+	}
+	
+	/* root element for pages */
+	#pages {
+		position:absolute;
+		height:20000em;
+	}
+	
+	/* single page */
+	.page {
+		padding:10px;
+		height: 300px;
+		background: none;
+		width:340px;
+	}
+	
+	/* root element for horizontal scrollables */
+	.scrollable {
+		position:relative;
+		overflow:hidden;
+		width: 340px;
+		height: 300px;
+	}
+	
+	/* root element for scrollable items */
+	.scrollable .items {
+		width:20000em;
+		position:absolute;
+		clear:both;
+	}
+	
+	/* single scrollable item */
+	.item {
+		float:left;
+		cursor:pointer;
+		width:340px;
+		height:300px;
+		padding:10px;
+	}
+	
+	/* main navigator */
+	#main_navi {
+		float:left;
+		padding:0px !important;
+		margin: 50px 0 auto;
+	}
+	
+	#main_navi li {
+		font-family: Comfortaa, Arial, Helvetica, sans-serif;
+		clear:both;
+		color:#fdb822;
+		font-size:24px;
+		height:30px;
+		list-style-type:none;
+		padding:15px 10px 15px 15px;
+		width:100px;
+		cursor:pointer;
+	}
+	
+	#main_navi li:hover {
+		background: url(../images/arrow.png) left no-repeat;
+		color:#f47b27;
+	}
+	
+	#main_navi li.active {
+		background: url(../images/arrow.png) left no-repeat;
+		color: #f47b27;
+	}
+	
+	#main_navi img {
+		float:left;
+		margin-right:10px;
+	}
+	
+	#main_navi strong {
+		display:block;
+	}
+	
+	#main div.navi {
+		margin: 0 auto;
+		cursor:pointer;
+	}
+
+
+/* some styling for triggers */
+	.triggers {
+		text-align:center;
+	}
+	
+	.triggers img {
+		cursor:pointer;
+		margin:0 5px;
+		background-color:#fff;	
+	}	
+	
+	/* styling for elements inside overlay */
+	.details-container {
+		width: inherit;
+		height: inherit;	
+	}
+	
+	.details {
+		font-size:11px;
+		color:#ccc;
+		width: 300px;
+		margin: 20px;
+		float: left;
+	}
+	.details-img {
+		float: left;	
+	}
+	
+	.details h3 {
+		color:#aba;
+		font-size:15px;
+		margin:0 0 -10px 0;
+	}
+	
+	.details p {
+		font-family: 'Gill Sans', Arial, Helvetica, sans-serif;
+	}
+	
+/* the overlayed element */
+.simple_overlay {
+	
+	/* must be initially hidden */
+	display:none;
+	
+	/* place overlay on top of other elements */
+	z-index:10000;
+	
+	/* styling */
+	background-color: #ededed;
+	min-height:500px;
+	border: none;
+	margin-top: -25px;
+	margin: 0 auto;
+	
+	/* CSS3 styling for latest browsers */
+	-moz-box-shadow:0 0 40px 0 #999;
+	-webkit-box-shadow: 0 0 40px #999;	
+}
+
+
+
+/* close button positioned on upper right corner */
+.simple_overlay .close {
+	background-image: url(../images/close.png);
+	position:absolute;
+	right:-15px;
+	top:-15px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}
+
+#instructions {
+	margin: -30px auto 0;
+	padding: 0 0 0 15px;
+	width: 350px;	
+}
+
+#instructions p {
+	text-align: center;
+}
+
+#contact {
+	margin: 0 auto;
+	width: 176px;
+}
+
+#contact li {
+	margin: 6px 0 0 0;
+	float: left;
+	list-style: none;
+}
+
+#facebook-like {
+	width: 317px;
+	margin: 0 auto;	
+}

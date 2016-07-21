@@ -1,0 +1,12 @@
+.sticky-nav {
+	.global-container {
+		a {
+			font-size: 13px;
+			padding: 0 9px;
+
+			&.last {
+				width: 190px;
+			}
+		}
+	}
+}

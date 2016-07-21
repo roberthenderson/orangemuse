@@ -1,0 +1,908 @@
+main.invest-page {
+	.hero-image {
+		height: 300px;
+
+		.content {
+			top: 30%;
+
+			h1 {
+				font-size: 34px;
+				line-height: 40px;
+			}
+
+			p {
+				span {
+					display: inline;
+				}
+			}
+		}
+
+		img {
+			top: -30%;
+		}
+	}
+
+	.wrong-way {
+		h3 {
+			font-size: 24px;
+		}
+	}
+
+	.proven-step {
+		.global-container {
+			.content {
+				width: 70%;
+
+				span {
+					display: inline;
+					padding: 0 15px 0 0;
+				}
+
+				h3 {
+					display: inline-block;
+					line-height: 48px;
+				}
+			}
+		}
+
+		&.trust-the-market, &.safety-in-numbers, &.added-dimension {
+			margin: 0;
+			padding: 7% 0;
+
+			img {
+				margin: 5% 0 0;
+				width: 25%;
+				height: auto;
+			}
+		}
+
+		&.disciplined-actions {
+			.flexslider {
+				float: none;
+				margin: 0 auto;
+			}
+
+			.content {
+				width: 100%;
+			}
+		}
+	}
+
+	.who-are-these-guys {
+		height: auto;
+
+		span.nobel-guy {
+			display: none;
+		}
+
+		.global-container {
+			.content {
+				position: static;
+				top: auto;
+				z-index: 1;
+				width: 100%;
+				padding: 10% 0 15% 0;
+			}
+
+			span.nobel {
+				display: none;
+			}
+		}
+	}
+
+	.thought-leaders {
+		.global-container {
+			p {
+				width: 94%;
+				margin: 0 auto 3% auto;
+
+				span {
+					display: inline;
+				}
+			}
+		}
+	}
+
+	.all-about-you {
+		height: auto;
+		padding: 20% 0;
+	}
+
+	.fees-that-agree {
+		.global-container {
+			padding: 0 10%;
+
+			.jui-slider {
+				&.investment-amount {
+					.x-axis {
+						span {
+							&:last-child {
+								right: -25px;
+
+								&:before {
+									right: 25px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.invest-savings {
+		height: auto;
+		padding: 10% 0 5% 0;
+
+		.global-container {
+			.top {
+				p {
+					width: 70%;
+					margin: 0 15% 3% 15%;
+				}
+			}
+		}
+
+		p.disclaimer {
+			width: 90%;
+			margin: 3% 5%;
+
+			span {
+				display: inline;
+			}
+		}
+	}
+
+	.features-benefits {
+		.global-container {
+			ul {
+				li {
+					.content {
+						h5 {
+							font-size: 20px;
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	.lets-get-started {
+		height: auto;
+		padding: 5% 0;
+
+		.global-container {
+			.heading {
+				position: static;
+				top: auto;
+				text-align: center;
+
+				h4 {
+					letter-spacing: 1px;
+					line-height: 22px;
+				}
+			}
+			.icons-container {
+				position: static;
+				top: auto;
+				left: auto;
+				width: 100%;
+				margin: 5% 0;
+
+				.section {
+					.col {
+						position: static;
+						min-height: 250px;
+						padding: 2.5% 3% 0 3%;
+						width: 33.33%;
+						border-bottom: 1px solid #d5d6cf;
+
+						&:last-child {
+							border: none;
+						}
+					}
+				}
+			}
+
+			img {
+				display: none;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 725px) {
+		.invest-process {
+			.global-container {
+				.flex-control-nav {
+					&.invest-process-nav {
+						background: transparent;
+						border: none;
+						border-radius: 0;
+						height: 100%;
+
+						li {
+							line-height: 22px;
+							width: 24.5%;
+							padding: 2.5% 5% 2%;
+							height: auto;
+						}
+					}
+				}
+			}
+		}
+
+		.fees-that-agree {
+			.global-container {
+				.jui-slider {
+					.top {
+						&> span {
+							font-size: 20px;
+							line-height: 75px;
+						}
+
+						.data-box {
+							width: 200px;
+							height: 75px;
+
+							span {
+								font-size: 38px;
+								line-height: 69px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 675px) {
+		.invest-process {
+			.global-container {
+				.invest-process-slider {
+					margin: 0;
+
+					ul.slides {
+						&> li {
+							&.slide-2 {
+								.flex-control-nav {
+									&.design-portfolio-nav {
+										text-align: center;
+										left: 25%;
+										width: 50%;
+									}
+								}
+							}
+
+							.content {
+								a {
+									letter-spacing: 2px;
+								}
+							}
+						}
+					}
+				}
+
+				.flex-control-nav {
+					&.invest-process-nav {
+						li {
+							@include text-hide();
+							width: 24px;
+							height: 24px;
+							border-radius: 12px;
+							padding: 0;
+							background: rgba(255,255,255,.1);
+							margin: 0 15px;
+						}
+					}
+				}
+			}
+		}
+
+		.fees-that-agree {
+			.global-container {
+				padding: 0 5%;
+				overflow: hidden;
+
+				.jui-slider {
+					&.investment-amount {
+						.x-axis {
+							span {
+								&:nth-child(2), &:nth-child(4), &:nth-child(6) {
+									visibility: hidden;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.features-benefits {
+			.global-container {
+				ul {
+					li {
+						float: none;
+						width: 70%;
+						margin: 0 15% 5% 15%;
+						text-align: center;
+
+						span.icon {
+							left: 41%;
+						}
+
+						&.invest {
+							span.icon {
+								top: 0;
+								left: 41%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 629px) {
+		.lets-get-started {
+			.global-container {
+				.icons-container {
+					h5 {
+						line-height: 22px;
+					}
+					.section {
+						.col {
+							min-height: 270px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 569px) {
+		.thought-leaders {
+			.global-container {
+				h4 {
+					line-height: 28px;
+					width: 94%;
+					position: static;
+					top: auto;
+					left: auto;
+					margin: 0 3% 20px 3%;
+					height: auto;
+				}
+
+				p {
+					margin-bottom: 10%;
+				}
+
+				.flexslider{
+					&.leaders-slider {
+						height: auto;
+
+						.flex-control-nav {
+							width: 94%;
+							top: -25px;
+							z-index: 2;
+
+							li {
+								width: 24px;
+								height: 24px;
+								display: inline-block;
+								padding: 17px;
+								margin: 0;
+
+								a {
+									width: 24px;
+									height: 24px;
+									background: $white;
+									cursor: pointer;
+
+									&.flex-active {
+										background: transparent;
+										border: 4px solid $white;
+										width: 16px;
+										height: 16px;
+										cursor: default;
+										top: 4px;
+									}
+								}
+							}
+						}
+
+						ul.slides {
+							width: 100%;
+							float: none;
+
+							li {
+								padding: 15% 0 0;
+
+								h5 {
+									width: 94%;
+									margin: 0 3%;
+								}
+
+								.school-content {
+									.left {
+										span.headshot {
+											margin-top: 0;
+										}
+									}
+
+									.right {
+										margin: 25px auto 0 auto;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.invest-process {
+			.global-container {
+				h4 {
+					font-size: 28px;
+					line-height: 34px;
+					padding: 10% 0 0;
+				}
+
+				.invest-process-slider {
+					ul.slides {
+						&> li {
+							.content {
+								h5 {
+									font-size: 24px;
+									line-height: 30px;
+								}
+							}
+
+							&.slide-1, &.slide-2, &.slide-3, &.slide-4 {
+								.content {
+									float: none;
+									width: 100%;
+									text-align: center;
+
+									ul {
+										li {
+											line-height: 34px;
+										}
+									}
+								}
+
+								img {
+									float: none;
+									width: auto;
+									margin: 40px auto 0 auto;
+								}
+							}
+
+							&.slide-2 {
+								.flex-control-nav {
+									&.design-portfolio-nav {
+										width: 95%;
+										left: 0;
+									}
+								}
+
+								ul.slides {
+									&> li {
+										&.slide-2-a {
+											position: relative;
+											height: 650px;
+
+											.content {
+												width: 100%;
+											}
+
+											img {
+												position: absolute;
+												bottom: 0;
+											}
+										}
+
+										&.slide-2-b {
+											.content {
+												width: 100%;
+											}
+
+											img {
+												margin: 40px auto 0 auto;
+											}
+										}
+									}
+								}
+							}
+
+							&.slide-3 {
+								position: relative;
+								height: 610px;
+
+								img {
+									position: absolute;
+									bottom: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 545px) {
+		.hero-image {
+			height: 250px;
+
+			.content {
+				h1 {
+					font-size: 28px;
+					line-height: 34px;
+				}
+
+				p {
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+
+			img {
+				top: -40%;
+			}
+		}
+
+		.wrong-way {
+			h3 {
+				font-size: 24px;
+			}
+
+			.col-container {
+				p {
+					width: 100%;
+					float: none;
+					padding: 4% 0 2% 0;
+					text-align: center;
+
+					&:last-child {
+						padding-bottom: 0;
+					}
+				}
+			}
+		}
+
+		.your-edge {
+			height: auto;
+
+			p {
+				padding: 10% 0 15% 0;
+			}
+		}
+
+		.how-can-it-be-proven {
+			.global-container {
+				border: none;
+			}
+
+			h2 {
+				width: 100%;
+				left: auto;
+				margin-left: 0;
+				position: static;
+			}
+		}
+
+		.fees-that-agree {
+			.global-container {
+				.jui-slider {
+					&.time-of-investment {
+						padding: 5% 0 0;
+					}
+
+					.top {
+						height: 65px;
+
+						&> span {
+							line-height: 60px;
+						}
+
+						.data-box {
+							width: 150px;
+							height: 60px;
+							border-width: 2px;
+
+							span {
+								font-size: 28px;
+								line-height: 56px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.lets-get-started {
+			.global-container {
+				.icons-container {
+					.section {
+						.col {
+							width: 50%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 461px) {
+		.hero-image {
+			.content {
+				top: 25%;
+
+				h1 {
+					font-size: 24px;
+				}
+			}
+
+			img {
+				top: -40%;
+			}
+		}
+
+		.how-can-it-be-proven {
+			h2 {
+				font-size: 20px;
+				line-height: 28px;
+			}
+		}
+
+		.proven-step {
+			overflow: hidden;
+
+			.global-container {
+				position: relative;
+
+				.content {
+					width: 100%;
+					float: none;
+
+					span {
+						font-size: 28px;
+					}
+
+					h3 {
+						font-size: 20px;
+					}
+
+					p {
+						font-size: 16px;
+						line-height: 26px;
+					}
+				}
+			}
+
+			&.trust-the-market, &.added-dimension {
+				img {
+					width: auto;
+					position: absolute;
+					top: 5%;
+					right: -10%;
+					z-index: 0;
+					opacity: .15;
+				}
+			}
+
+			&.safety-in-numbers {
+				img {
+					width: auto;
+					position: absolute;
+					top: 35%;
+					left: -20%;
+					z-index: 0;
+					opacity: .15;
+				}
+			}
+
+			&.disciplined-actions {
+				.flexslider {
+					float: none;
+					width: 290px;
+					margin: 0 auto;
+
+					ul.slides {
+						li {
+							.flag {
+								width: 290px;
+
+								.message {
+									width: 47%;
+
+									span {
+										font-size: 16px;
+										line-height: 20px;
+									}
+								}
+							}
+
+							span.brain {
+								margin: 128px auto 100px auto;
+							}
+						}
+					}
+				}
+
+				.content {
+					padding-top: 20%;
+				}
+			}
+		}
+
+		.invest-process {
+			.global-container {
+				.invest-process-slider {
+					ul.slides {
+						&> li {
+							&.slide-1, &.slide-2, &.slide-3, &.slide-4 {
+								img {
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.invest-savings {
+			.global-container {
+				.top {
+					.left, .right {
+						height: 175px;
+					}
+
+					p {
+						width: 90%;
+						margin: 0 5%;
+					}
+				}
+			}
+		}
+
+		.features-benefits {
+			.global-container {
+				h4 {
+					font-size: 26px;
+					line-height: 34px;
+				}
+
+				ul {
+					li {
+						width: 80%;
+						margin: 0 10% 5% 10%;
+
+						span.icon {
+							left: 38%;
+						}
+
+						&.invest {
+							span.icon {
+								top: 0;
+								left: 38%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		.fees-that-agree {
+			.global-container {
+				h4 {
+					font-size: 28px;
+				}
+				.jui-slider {
+					.top {
+						height: 45px;
+
+						&> span {
+							font-size: 16px;
+							line-height: 40px;
+						}
+
+						.data-box {
+							width: 115px;
+							height: 40px;
+							border-width: 2px;
+
+							span {
+								font-size: 20px;
+								line-height: 36px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 380px) {
+		.hero-image {
+			.content {
+				top: 15%;
+				width: 80%;
+				margin: 0 10%;
+
+				h1 {
+					width: 80%;
+					margin: 0 10%;
+				}
+			}
+		}
+
+		.invest-savings {
+			padding: 20% 0;
+
+			.global-container {
+				.top {
+					p {
+						font-size: 14px;
+						line-height: 20px;
+						margin-bottom: 30px;
+					}
+
+					span.invest-amount {
+						font-size: 20px;
+					}
+				}
+
+				.bottom {
+					p {
+						span.price {
+							font-size: 44px;
+							line-height: 54px;
+						}
+					}
+				}
+			}
+
+			a {
+				letter-spacing: 1px;
+			}
+		}
+
+		.lets-get-started {
+			.global-container {
+				.heading {
+					h3 {
+						font-size: 24px;
+						letter-spacing: 3px;
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 350px) {
+		.lets-get-started {
+			.global-container {
+				.heading {
+					h4 {
+						letter-spacing: 0;
+					}
+				}
+				.icons-container {
+					.section {
+						.col {
+							width: 100%;
+							min-height: 0;
+							padding: 5% 3%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

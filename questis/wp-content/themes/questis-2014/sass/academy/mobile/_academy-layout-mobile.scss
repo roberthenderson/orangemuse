@@ -1,0 +1,23 @@
+.blog, .archive, .search {
+	h1.page-title {
+		padding-top: 35px;
+		font-size: 28px;
+	}
+
+	#primary {
+		article {
+			padding: 10% 0;
+
+			header {
+				h1 {
+					padding-bottom: 5%;
+					
+					a {
+						font-size: 30px;
+						line-height: 36px;
+					}
+				}
+			}
+		}
+	}
+}

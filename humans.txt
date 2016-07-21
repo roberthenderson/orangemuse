@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Robert Henderson -- Senior Frontend Software Engineer -- @roberthenderson
+
+# THANKS
+
+    Thanks to my two cats, whom without, this coming soon splash page would not be possible.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
